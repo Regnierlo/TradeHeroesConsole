@@ -7,5 +7,22 @@
 
   <ItemGroup>
     <Folder Include="View\" />
+    <Folder Include="Characters\" />
+    <Folder Include="Engine\" />
+    <Folder Include="Places\" />
+    <Folder Include="Ressources\" />
+    <Folder Include="Ressources\Languages\" />
+    <Folder Include="Ressources\Parameters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Ressources\Languages\French.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>French.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Ressources\Languages\French.Designer.cs">
+      <DependentUpon>French.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

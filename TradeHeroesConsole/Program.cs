@@ -7,7 +7,7 @@ namespace TradeHeroesConsole
     {
         static void Main(string[] args)
         {
-            new GestionPlaces();
+            new GameEngine();
         }
     }
 }
