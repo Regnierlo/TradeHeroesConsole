@@ -1,4 +1,5 @@
 ﻿using System;
+using TradeHeroesConsole.View;
 
 namespace TradeHeroesConsole
 {
@@ -6,7 +7,7 @@ namespace TradeHeroesConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new GestionPlaces();
         }
     }
 }
