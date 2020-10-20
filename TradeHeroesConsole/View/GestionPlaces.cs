@@ -14,10 +14,13 @@ namespace TradeHeroesConsole.View
             Marché
         };
 
+        private List<Places> _lplaces;
+
         public GestionPlaces()
         {
 
-            affichePlaces(generationPlaces(Places.CentreVille));
+            _lplaces = generationPlaces(Places.CentreVille);
+            affichePlaces(_lplaces);
         }
 
         /// <summary>
@@ -44,7 +47,7 @@ namespace TradeHeroesConsole.View
         /// Affiche les places accessibles par le joueur
         /// </summary>
         /// <param name="l">List des places accessibles par le joueur</param>
-        private void affichePlaces(List<Places> l)
+        public void affichePlaces(List<Places> l)
         {
             for (int i = 1; i < l.Count+1; i++)
             {
